@@ -1,0 +1,41 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Highlighter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <label for="path-select"><B>Select Path</B></label>
+            <select id="path-select">
+                <option value="">Select Path</option>
+                <option value="A-D">A -&gt; D</option>
+                <option value="A-B">A -&gt; B</option>
+                <option value="A-C">A -&gt; C</option>
+                <option value="D-A">D -&gt; A</option>
+            </select>
+        </div>
+        <div class="hexagon">
+            <div class="node" id="A">A</div>
+            <div class="node" id="B">B</div>
+            <div class="node" id="C">C</div>
+            <div class="node" id="D">D</div>
+            <div class="node" id="E">E</div>
+            <svg width="300" height="300">
+                <line id="line-CB" x1="50" y1="50" x2="150" y2="20"></line>
+                <line id="line-CD" x1="50" y1="50" x2="50" y2="150"></line>
+                <line id="line-CE" x1="50" y1="50" x2="150" y2="180"></line>
+                <line id="line-CA" x1="50" y1="50" x2="250" y2="100"></line>
+                <line id="line-BD" x1="150" y1="20" x2="50" y2="150"></line>
+                <line id="line-BA" x1="150" y1="20" x2="250" y2="100"></line>
+                <line id="line-DE" x1="50" y1="150" x2="150" y2="180"></line>
+                <line id="line-DA" x1="50" y1="150" x2="250" y2="100"></line>
+                <line id="line-EA" x1="150" y1="180" x2="250" y2="100"></line>
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body></html>
